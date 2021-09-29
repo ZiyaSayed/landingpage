@@ -6,6 +6,17 @@ body {
   height: 1000rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0rem;
+  padding: 0rem;
+}
+
 :root {
   --primary: #0578f9;
   --secondary: #c1dfff;
@@ -217,4 +228,57 @@ button {
 
 .concernSvg {
   margin-right: 0.5rem;
+}
+
+/* ---------------Styling experience section------------------ */
+
+.experienceSection {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceText h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0rem 8rem;
+}
+
+.experienceText h1 span {
+  color: var(--primary);
+}
+
+.experienceText p {
+  text-align: center;
+  color: var(--font1);
+  margin-top: 2rem;
+  padding: 0rem 22rem;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 4rem;
+}
+
+.experienceGrid div {
+  background: url("./svg/rectangle.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 2rem 0rem;
+}
+
+.experienceGrid div h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.experienceGrid div p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0rem 1.5rem;
+  color: rgb(172, 169, 169);
 }
