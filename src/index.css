@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary: #0578f9;
+  --secondary: #c1dfff;
+  --footerColor: #0e244c;
+  --button: #007aff;
+  --font1: #b8c4cf;
+}
+
+.container {
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.9rem 2.1rem;
+  background: transparent;
+  border-radius: 2rem;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.btnPrimary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btnSecondary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.verifyIcon {
+  margin-right: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.verifyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 9rem;
+}
+
+.navbar {
+  margin-top: 2rem;
+}
+
+.navSection {
+  display: flex;
+  align-items: center;
+}
+
+.navComponent {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks ul {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 4rem;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
 }
