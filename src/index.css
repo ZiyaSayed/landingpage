@@ -24,6 +24,7 @@ li {
   --button: #007aff;
   --lightBlue: #f3f9ff;
   --font1: #a9b7c4;
+  --blackPowder: rgb(42, 42, 42);
 }
 
 .container {
@@ -172,6 +173,9 @@ button {
   align-items: center;
 }
 
+.rBtn {
+  margin-top: 1rem;
+}
 .rightIcon {
   margin-left: 0.1rem;
 }
@@ -281,4 +285,67 @@ button {
   margin-top: 1rem;
   padding: 0rem 1.5rem;
   color: rgb(172, 169, 169);
+}
+
+/* ---------------- Styling how it works section------------------ */
+
+.worksSection {
+  margin-top: 10rem;
+}
+
+.worksText h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--blackPowder);
+}
+
+.worksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  grid-template-areas:
+    ". a . b . c ."
+    ". . d . e . . ";
+}
+
+.worksGrid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.worksGrid div h3 {
+  color: var(--blackPowder);
+}
+
+.worksGrid div p {
+  margin-top: 1rem;
+  color: rgb(119, 116, 116);
+  font-size: 0.9rem;
+}
+
+.dataIcon img {
+  width: 8rem;
+}
+
+#div-1 {
+  grid-area: a;
+}
+
+#div-2 {
+  grid-area: b;
+}
+
+#div-3 {
+  grid-area: c;
+}
+
+#div-4 {
+  grid-area: d;
+}
+
+#div-5 {
+  grid-area: e;
 }

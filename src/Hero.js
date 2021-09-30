@@ -20,7 +20,7 @@ const Hero = () => {
           Securing the genunity of your brand and helping consumers buy smartly
         </p>
         <Link to="#">
-          <button className="btn btnPrimary">
+          <button className="btn btnPrimary rBtn">
             <div className="requenstBtn">
               Request Demo
               <AiOutlineArrowRight className="rightIcon" />
