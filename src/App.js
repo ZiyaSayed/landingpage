@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Consumer from "./Consumer";
 import ExperienceSection from "./ExperiencesSection";
 import Howitworks from "./Howitworks";
+import Why from "./Why";
 import "./index.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Consumer />
       <ExperienceSection />
       <Howitworks />
+      <Why />
     </Router>
   );
 };
