@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./svg/logo.svg";
-import { CgDisplayGrid } from "react-icons/cg";
+import verify from "./svg/verify.svg";
 
 const linkStyle = {
   textDecoration: "none",
@@ -49,7 +49,7 @@ export default function Navbar() {
               <Link to="#">
                 <button className="btn btnPrimary">
                   <div className="verifyButton">
-                    <CgDisplayGrid className="verifyIcon" />
+                    <img src={verify} className="verifyIcon" />
                     <div>Verify</div>
                   </div>
                 </button>
@@ -67,3 +67,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export { linkStyle };

@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  height: 1000rem;
 }
 
 h1,
@@ -417,4 +416,111 @@ button {
 
 .whyLeft img {
   width: 60%;
+}
+
+/* ----------------- Styling Footer Section ---------------- */
+.footerSection {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  background-color: var(--footerColor);
+  font-family: "Noto Sans Display", sans-serif;
+  padding-bottom: 2rem;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-gap: 2rem;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid grey;
+}
+
+.footerTop {
+  color: var(--background);
+}
+
+.footerLeft p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.socialMediaSection {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.socialMediaSection * {
+  margin-right: 1.5rem;
+}
+
+.footerMid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 4rem;
+  line-height: 2.5rem;
+}
+
+.footerMid div ul {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.footerRight {
+  margin-right: 5rem;
+}
+.footerRight p {
+  text-align: right;
+}
+
+.footerForm {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0rem;
+}
+
+.mailIcon {
+  margin: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.emailInput input {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.emailInput input::placeholder {
+  color: var(--background);
+}
+
+.getStarted {
+  padding: 0rem;
+  margin: 0rem;
+  margin-right: 0.2rem;
+}
+.getStarted button {
+  border: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.7rem;
+  border-radius: 0.4rem;
+}
+
+.footerBottom {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: grey;
+  font-weight: bold;
 }
