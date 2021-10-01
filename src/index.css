@@ -25,6 +25,7 @@ li {
   --font1: #a9b7c4;
   --blackPowder: rgb(42, 42, 42);
   --background: #f3f9ff;
+  --transition: all 0.3s linear;
 }
 
 .container {
@@ -524,3 +525,91 @@ button {
   color: grey;
   font-weight: bold;
 }
+
+/* ----------- styling features section ------------- */
+
+.sectionCenter {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 40rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+article {
+  position: absolute;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.featureText h1 {
+  font-size: 3rem;
+}
+
+.featureText p {
+  font-size: 1rem;
+  color: rgb(32, 13, 13);
+  margin-top: 2rem;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+.sectionCenter article img {
+  width: 20rem;
+}
+
+.articlewrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureText p {
+  text-align: center;
+}
+
+.slideButtons {
+  position: absolute;
+  transition: var(--transition);
+  top: 28rem;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 2rem;
+  margin: 0rem auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideButtons button {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 100%;
+}
+
+.slideButtons .activeSlideButton {
+  background-color: var(--primary);
+}
+
+.slideButtons button div {
+  width: 0.1rem;
+  height: 0.6rem;
+}
+
+/* ------------------------- Media Query ------------------------------- */

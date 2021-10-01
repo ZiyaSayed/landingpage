@@ -7,6 +7,7 @@ import ExperienceSection from "./ExperiencesSection";
 import Howitworks from "./Howitworks";
 import Why from "./Why";
 import Footer from "./Footer";
+import Feature from "./Feature";
 import "./index.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Consumer />
       <ExperienceSection />
       <Howitworks />
+      <Feature />
       <Why />
       <Footer />
     </Router>
