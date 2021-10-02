@@ -10,7 +10,7 @@ const linkStyle = {
 
 export default function Navbar() {
   return (
-    <nav className="navbar container">
+    <nav className="navbar wrapper">
       <div className="navSection">
         <div className="logo">
           <Link to="/">
